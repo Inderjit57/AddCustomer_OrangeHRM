@@ -37,14 +37,14 @@ public class AddCustomerTest extends TestBase {
 
 		// Verify successful login
 		String getSuccessfulLoginText = account.accountPage();
-		Assert.assertEquals(getSuccessfulLoginText, "", "No element is present"); // exptected message to be added
+		Assert.assertEquals(getSuccessfulLoginText, "Dashboard", "No element is present"); // exptected message to be added
 
 		// Hover mouse to tab: Time
 		account.hoverToTabTime();
 
 		// verify customer page is present
 		String customerPageText = customerPage.customerPageHeader();
-		Assert.assertEquals(customerPageText, "", "No element is present"); // exptected message to be added
+		Assert.assertEquals(customerPageText, "Customers", "No element is present"); // exptected message to be added
 
 		// Click add button
 		customerPage.clickAddBtn();
